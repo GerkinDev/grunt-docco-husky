@@ -7,7 +7,7 @@
 module.exports = function(grunt) {
 
 	var docco = require('docco-husky');
-	var _ = require('underscore');
+	var _ = require('lodash');
 
 	// ### TASKS
 	grunt.registerMultiTask('docco_husky', 'Docco-husky processor.', function docco_husky() {
@@ -17,9 +17,11 @@ module.exports = function(grunt) {
 		options = grunt.config(['docco-husky', this.target, 'options']);
 		if (typeof options === 'object') {
 			grunt.verbose.writeln('Using "' + this.target + '" Docco-husky options.');
+			options.cwd = _.get(options, ['files', 'cwd'], process.cwd());
 		} else {
 			grunt.verbose.writeln('Using master Docco-huskey options.');
 			options = grunt.config('docco_husky');
+			options.cwd = _.get(options, ['files', 'cwd'], process.cwd());
 			options.files = grunt.file.expand(options.files, options.files.src);
 		}
 
