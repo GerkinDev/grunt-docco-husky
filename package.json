@@ -1,0 +1,97 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "https://github.com/GerkinDev/grunt-docco-husky.git",
+        "scope": null,
+        "escapedName": null,
+        "name": null,
+        "rawSpec": "https://github.com/GerkinDev/grunt-docco-husky.git",
+        "spec": "git+https://github.com/GerkinDev/grunt-docco-husky.git",
+        "type": "hosted",
+        "hosted": {
+          "type": "github",
+          "ssh": "git@github.com:GerkinDev/grunt-docco-husky.git",
+          "sshUrl": "git+ssh://git@github.com/GerkinDev/grunt-docco-husky.git",
+          "httpsUrl": "git+https://github.com/GerkinDev/grunt-docco-husky.git",
+          "gitUrl": "git://github.com/GerkinDev/grunt-docco-husky.git",
+          "shortcut": "github:GerkinDev/grunt-docco-husky",
+          "directUrl": "https://raw.githubusercontent.com/GerkinDev/grunt-docco-husky/master/package.json"
+        }
+      },
+      "/Users/gerkin/Desktop/Work/nodejs/Diaspora"
+    ]
+  ],
+  "_from": "git+https://github.com/GerkinDev/grunt-docco-husky.git",
+  "_id": "grunt-docco-husky@0.0.4",
+  "_inCache": true,
+  "_location": "/grunt-docco-husky",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "https://github.com/GerkinDev/grunt-docco-husky.git",
+    "scope": null,
+    "escapedName": null,
+    "name": null,
+    "rawSpec": "https://github.com/GerkinDev/grunt-docco-husky.git",
+    "spec": "git+https://github.com/GerkinDev/grunt-docco-husky.git",
+    "type": "hosted",
+    "hosted": {
+      "type": "github",
+      "ssh": "git@github.com:GerkinDev/grunt-docco-husky.git",
+      "sshUrl": "git+ssh://git@github.com/GerkinDev/grunt-docco-husky.git",
+      "httpsUrl": "git+https://github.com/GerkinDev/grunt-docco-husky.git",
+      "gitUrl": "git://github.com/GerkinDev/grunt-docco-husky.git",
+      "shortcut": "github:GerkinDev/grunt-docco-husky",
+      "directUrl": "https://raw.githubusercontent.com/GerkinDev/grunt-docco-husky/master/package.json"
+    }
+  },
+  "_requiredBy": [
+    "#DEV:/",
+    "#USER"
+  ],
+  "_resolved": "git+https://github.com/GerkinDev/grunt-docco-husky.git#cc9d4a13ced7ceb49920bcc362f10a2fb8ce89bf",
+  "_shasum": "b3b3d4f73d26c735ccfc1598ed8585f68f1b3537",
+  "_shrinkwrap": null,
+  "_spec": "https://github.com/GerkinDev/grunt-docco-husky.git",
+  "_where": "/Users/gerkin/Desktop/Work/nodejs/Diaspora",
+  "authors": [
+    {
+      "name": "Vy Hoang"
+    },
+    {
+      "name": "Gerkin",
+      "homepage": "https://github.com/Nihilivin"
+    }
+  ],
+  "bugs": {
+    "url": "https://github.com/Nihilivin/grunt-docco-husky/issues"
+  },
+  "dependencies": {
+    "docco-husky": "git+https://github.com/GerkinDev/docco-husky.git",
+    "grunt": "^1.0.1",
+    "underscore": "1.4.2"
+  },
+  "description": "Docco husky task for grunt",
+  "devDependencies": {},
+  "gitHead": "cc9d4a13ced7ceb49920bcc362f10a2fb8ce89bf",
+  "homepage": "https://github.com/Nihilivin/grunt-docco-husky#readme",
+  "keywords": [
+    "grunt",
+    "docco",
+    "docco-husky"
+  ],
+  "license": "BSD",
+  "main": "index.js",
+  "name": "grunt-docco-husky",
+  "optionalDependencies": {},
+  "readme": "# grunt-docco-husky\n\nGrunt Docco-husky plugin.\n\n## Getting Started\nInstall this grunt plugin next to your project's [grunt.js gruntfile][getting_started] with: `npm install grunt-docco-husky`\n\nThen add this line to your project's `grunt.js` gruntfile:\n\n```javascript\ngrunt.loadNpmTasks('grunt-docco-husky');\n```\nYou can add parameters to the grunt docco husky task and hook it to your development workflow like so:\n\n```javascript\ngrunt.initConfig({\n  docco_husky : {\n    'project_name':'testing',\n    'files':['js/*.js']\n  },\n  watch : {\n    files: ['js/*.js', 'spec/javascripts/libs/*.spec.js'],\n    tasks: 'docco_husky'\n  }\n});\n```\n\n[grunt]: https://github.com/cowboy/grunt\n[getting_started]: https://github.com/cowboy/grunt/blob/master/docs/getting_started.md\n\n## Documentation\n\n### NOTES: ###\n\nOnce docco-husky is installed, please add the \"depedencies\" property to your package.json:\n\n```javascript\n{\n  \"name\": \"jquery-plugin\",\n  \"version\": \"0.0.0-ignored\",\n  \"engines\": {\n    \"node\": \">= 0.6.0\"\n  },\n  \"scripts\": {\n    \"test\": \"grunt\"\n  },\n  \"devDependencies\": {\n    \"grunt\": \"~0.3.16\",\n    \"grunt-jasmine-runner\": \"0.5.5\"\n  },\n  \"dependencies\": {}\n}\n``` \n\nThis should prevent docco-husky to crash when generating your documentation.\n\n## Contributing\nIn lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [grunt][grunt].\n\n## Release History\n_(Nothing yet)_\n\n## License\nCopyright (c) 2012 David Souther  \nLicensed under the MIT license.\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Nihilivin/grunt-docco-husky.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "0.0.4"
+}
