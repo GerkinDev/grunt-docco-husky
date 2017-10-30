@@ -9,7 +9,7 @@
     }
   ],
   "bugs": {
-    "url": "https://github.com/Nihilivin/grunt-docco-husky/issues"
+    "url": "https://github.com/GerkinDev/grunt-docco-husky/issues"
   },
   "dependencies": {
     "bluebird": "^3.5.0",
@@ -20,7 +20,7 @@
   "description": "Docco husky task for grunt",
   "devDependencies": {},
   "gitHead": "cc9d4a13ced7ceb49920bcc362f10a2fb8ce89bf",
-  "homepage": "https://github.com/Nihilivin/grunt-docco-husky#readme",
+  "homepage": "https://github.com/GerkinDev/grunt-docco-husky#readme",
   "keywords": [
     "grunt",
     "docco",
@@ -34,7 +34,7 @@
   "readmeFilename": "README.md",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Nihilivin/grunt-docco-husky.git"
+    "url": "git+https://github.com/GerkinDev/grunt-docco-husky.git"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
